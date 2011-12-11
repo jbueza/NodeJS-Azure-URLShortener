@@ -1,37 +1,28 @@
-var azure   = require("azure")
-  , uuid    = require("node-uuid")
-  , client  = azure.createTableService();
 
-var url = function(options) {
-    
+/*var azure     = require("azure")
+  , uuid      = require("node-uuid")
+  , client    = azure.createTableService()
+  , tableName = "abcUrls";
+
+var url = function() {};
+url.insert = function(request, response) {
+
+    console.error(request);
+    var item = request.body.item;
+    item.RowKey = uuid();
+    item.PartitionKey = 'Partition1';
+    item.DateCreated = new Date().getTime();
+
+    self.client.insertEntity(tableName, item, function (error) {
+      if(error) throw error; 
+      
+    });    
 };
 
-url.insert = function insert(record) {
-  var self = this;
-  var createItem = function (resp, tasklist) {
-      if (!tasklist) {
-          tasklist = [];
-      }
-
-      var count = tasklist.length;
-
-      var item = req.body.item;
-      item.RowKey = uuid();
-      item.PartitionKey = 'partition1';
-      item.completed = false;
-
-      self.client.insertEntity('tasks', item, function (error) {
-          if(error){  
-              throw error;
-          }
-          self.showItems(req, res);
-      });
-  };
+url.search = function search(request, response) {
+    console.error("SEARCH!");
 };
 
-url.search = function search(params) {
-  
 
-};
 
-exports = url;
+exports = module.exports = url;*/
