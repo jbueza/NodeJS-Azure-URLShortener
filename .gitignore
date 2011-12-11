@@ -8,3 +8,6 @@ Thumbs.db
 *.diff
 *.patch
 *.idea
+
+Web.config
+Web.cloud.config
