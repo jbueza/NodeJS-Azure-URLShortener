@@ -1,3 +1,10 @@
-DS_Store
 *.sass-cache
 *.csx
+.svn
+.DS_Store
+Thumbs.db
+.settings
+*~
+*.diff
+*.patch
+*.idea
