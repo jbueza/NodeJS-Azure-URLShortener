@@ -11,3 +11,5 @@ Thumbs.db
 *.suo
 
 WebRole1/Web.cloud.config
+
+*.cspkg
