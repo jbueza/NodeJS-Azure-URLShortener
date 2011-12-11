@@ -8,6 +8,6 @@ Thumbs.db
 *.diff
 *.patch
 *.idea
+*.suo
 
-WebRole1/Web.config
 WebRole1/Web.cloud.config
