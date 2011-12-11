@@ -9,5 +9,5 @@ Thumbs.db
 *.patch
 *.idea
 
-Web.config
-Web.cloud.config
+WebRole1/Web.config
+WebRole1/Web.cloud.config
