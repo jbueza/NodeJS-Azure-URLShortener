@@ -12,7 +12,8 @@ This is a cute little app that was written in an attempt to hack on some Azure T
 
 ## Sample Web.cloud.config
 
-<pre><?xml version="1.0" encoding="utf-8"?>
+```
+<?xml version="1.0" encoding="utf-8"?>
 <!--
   For more information on how to configure your ASP.NET application, please visit
   http://go.microsoft.com/fwlink/?LinkId=169433
@@ -52,7 +53,7 @@ This is a cute little app that was written in an attempt to hack on some Azure T
     </rewrite>
   </system.webServer>
 </configuration>
-</pre>
+```
 
 ## MIT License
 
