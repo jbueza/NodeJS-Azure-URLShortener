@@ -21,7 +21,7 @@ app.configure(function () {
 // Routes
 
 app.get('/', function (request, response) {
-  response.render('index', { title: 'Vancouver Azure Meetup Group!' });
+  response.render('index', { title: 'Vancouver Azure  Group!' });
 });
 app.post('/api', function (request, response) {
   response.header("Content-Type", "application/json");
