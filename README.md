@@ -1,6 +1,6 @@
 # NodeJS Windows Azure URL Shortener
 
-This is a cute little app that was written in an attempt to hack on some Azure Table Storage.
+This is a cute little app that was written in an attempt to hack on some NodeJS + Azure + Azure Table Storage.
 
 ## Installation (using PowerShell)
 
@@ -8,7 +8,6 @@ This is a cute little app that was written in an attempt to hack on some Azure T
 * cd NodeJS-Azure-URLShortener
 * edit the generated Web.cloud.config file and add appSettings nodes
 * Type in PowerShell: <code>Start-AzureEmulator -launch</code>
-
 
 ## Sample Web.cloud.config
 
