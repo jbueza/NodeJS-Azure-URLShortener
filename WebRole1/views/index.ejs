@@ -1,18 +1,12 @@
-<h1>
-  <%= title %>
-</h1>
+<h1><%= title %></h1>
+<hr>
+<p>This is an app built with NodeJS and deployed to Windows Azure. It uses Azure Table Storage for all URLs (insertion, retrieval).</p>
 
-<p>This is a demonstration app built with NodeJS and deployed to Windows Azure. It uses Azure Table Storage for all URLs (insertion, retrieval).</p>
-<p>
-  Enter a URL to shorten!
-</p>
-
-<form method="POST" onsubmit="return false;">
-<input type="url" name="url" required="">
-  <button>Shorten</button>
-
+<form method="POST" onsubmit="return false;" class="well form-inline">
+  <input type="url" name="url" required="" placeholder="http://" >
+  <button type="submit" class="btn"><i class="icon-cog"></i> Shorten</button>
+  
   <div class="output" style="display: none;">
-    Shortened URL:
-    <span></span>
+    Shortened URL: <span></span>
   </div>
 </form>
