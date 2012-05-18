@@ -1,9 +1,12 @@
 var express = require('express');
-var azure = require("azure")
-  , alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".split("")
+try {
+  var azure = require("azure");
+} catch(err) {}
+
+
+var alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".split("")
   , base = alphabet.length
   , uuid = require("node-uuid")
-  , client = azure.createTableService()
   , tableName = "abcUrls";
 
 
@@ -38,6 +41,7 @@ app.listen(process.env.port || 1337);
 
 var url = function () { };
 url.insert = function insert(request, response) {
+  var client = azure.createTableService();
   client.createTableIfNotExists(tableName, function (err) {
 
     //check if it exists, if it does exist, redirect
@@ -64,6 +68,7 @@ url.insert = function insert(request, response) {
 };
 
 url.search = function search(paramsObj, callback) {
+  var client = azure.createTableService();
   client.createTableIfNotExists(tableName, function (creationError) {
     if (creationError === null) {
       var query = azure.TableQuery
