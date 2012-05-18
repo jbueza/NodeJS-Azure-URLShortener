@@ -1,6 +1,8 @@
 # NodeJS Windows Azure URL Shortener
 
-This is a cute little app that was written in an attempt to hack on some NodeJS + Azure + Azure Table Storage.
+This is a little app that was written in an attempt to hack on some NodeJS + Azure + Azure Table Storage.
+
+![Alt text](/path/to/img.jpg)
 
 ## Installation (using PowerShell)
 
