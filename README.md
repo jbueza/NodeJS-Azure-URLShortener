@@ -2,7 +2,7 @@
 
 This is a little app that was written in an attempt to hack on some NodeJS + Azure + Azure Table Storage.
 
-![Alt text](/path/to/img.jpg)
+![Screenshot of NodeJS URL Shortener on Windows Azure](https://github.com/jbueza/NodeJS-Azure-URLShortener/raw/master/NodeJS_Azure_URLShortener.png)
 
 ## Installation (using PowerShell)
 
