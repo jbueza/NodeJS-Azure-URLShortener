@@ -24,7 +24,7 @@ app.configure(function () {
 // Routes
 
 app.get('/', function (request, response) {
-  response.render('index', { title: 'Vancouver Azure  Group!' });
+  response.render('index', { title: "NodeJS URL Shortener on Windows Azure" });
 });
 app.post('/api', function (request, response) {
   response.header("Content-Type", "application/json");
@@ -39,7 +39,7 @@ app.get('/:hash', function (request, response) {
 
 app.listen(process.env.port || 1337);
 
-var url = function () { };
+var url = {};
 url.insert = function insert(request, response) {
   var client = azure.createTableService();
   client.createTableIfNotExists(tableName, function (err) {
